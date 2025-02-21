@@ -48,8 +48,8 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker push jorge10jr/docker-graphql:$NEW_VERSION .
-        docker push jorge10jr/docker-graphql:latest .
+        docker push jorge10jr/docker-graphql:$NEW_VERSION 
+        docker push jorge10jr/docker-graphql:latest 
         
         
         
